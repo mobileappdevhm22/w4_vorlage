@@ -9,7 +9,6 @@ object ServiceModule {
     private val retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create(Gson()))
         .baseUrl("https://ergast.com/api/f1/")
-        .
         .build()
 
     fun<T> buildService(service: Class<T>): T{
